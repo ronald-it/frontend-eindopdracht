@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ronald-it/frontend-eindopdracht#readme",
   "devDependencies": {
     "parcel": "^2.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }
