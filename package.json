@@ -1,0 +1,23 @@
+{
+  "name": "frontend-eindopdracht",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronald-it/frontend-eindopdracht.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronald-it/frontend-eindopdracht/issues"
+  },
+  "homepage": "https://github.com/ronald-it/frontend-eindopdracht#readme",
+  "devDependencies": {
+    "parcel": "^2.6.0"
+  }
+}
