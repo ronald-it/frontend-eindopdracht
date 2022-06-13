@@ -1,0 +1,33 @@
+.title-and-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ul-header {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ul-header > li {
+    padding-right: 1em;
+    text-decoration: none;
+}
+
+.ul-header a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.hero-image-div {
+    /*background-image: url("./assets/images/hero-image.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 450px;
+}
+
+.hero-image {
+    background-size: cover;
+}
