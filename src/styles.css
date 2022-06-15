@@ -1,28 +1,83 @@
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*box-sizing: border-box;*/
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1 {
+    font-family: 'Austein', sans-serif;
+}
+
+h2, h3, h4, h5, h6, body, footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+.outer-container-header {
+    border: 1px solid blue;
+}
+
+.inner-container-header {
+    border: 1px solid yellow;
+}
+
+.outer-container-main {
+    border: 1px solid red;
+}
+
+.inner-container-main {
+    border: 1px solid green;
+}
+
+.outer-container-footer {
+    border: 1px solid blue;
+}
+
+.inner-container-footer {
+    border: 1px solid yellow;
+}
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+/* --------------- 4.1 Header ------------------- */
 .title-and-navbar {
+    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #EEEEEE;
 }
 
 .ul-header {
+    border: 1px solid green;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+h1 {
+    color: #283E53;
+    font-weight: lighter;
+}
+
 .ul-header > li {
-    padding-right: 1em;
+    padding-right: 3em;
     text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 0.1mm;
 }
 
 .ul-header a:link, a:visited, a:hover, a:active {
     text-decoration: none;
+    color: #373737;
 }
 
 .hero-image-div {
-    /*background-image: url("./assets/images/hero-image.jpg");*/
+    border: 1px solid blue;
+    /*background-image: url("../assets/images/hero-image.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
     flex-basis: 450px;
@@ -30,4 +85,40 @@
 
 .hero-image {
     background-size: cover;
+}
+
+/* --------------- 4.2 Carousel ------------- */
+.outer-container-carousel {
+    border: 1px solid blue;
+    margin: 150px;
+}
+
+.inner-container-carousel {
+    border: 1px solid yellow;
+}
+
+/* --------------- 4.3 Search bar ------------- */
+.outer-container-searchbar {
+    border: 1px solid red;
+    background-color: #283E53;
+    padding: 50px;
+}
+
+.inner-container-searchbar {
+    border: 1px solid green;
+}
+
+/* --------------- 4.4 Search results ------------- */
+.outer-container-search-results {
+    border: 1px solid blue;
+}
+
+.inner-container-search-results {
+    border: 1px solid yellow;
+}
+
+/* --------------- 4.5 Footer ------------- */
+
+.outer-container-footer {
+    background-color: #283E53;
 }

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
     <title>Home</title>
 </head>
 <body>
 <header class="outer-container-header">
     <div class="inner-container-header">
-        <div class="title-and-navbar"><h1>The clueless cook</h1>
+        <div class="title-and-navbar"><h1>The Clueless Cook</h1>
             <nav>
                 <ul class="ul-header">
                     <li><a href="./index.html"> Home</a></li>
@@ -18,7 +19,7 @@
             </nav>
         </div>
     </div>
-    <div class="hero-image-div"></div>
+    <div class="hero-image-div"><img src="../assets/images/hero-image.jpg" alt="Hero image"></div>
 </header>
 <main class="outer-container-main">
     <div class="inner-container-main">
@@ -26,7 +27,11 @@
             <div class="inner-container-carousel"><p>Carousel</p></div>
         </div>
         <div class="outer-container-searchbar">
-            <div class="inner-container-searchbar"><p>Searchbar</p></div>
+            <div class="inner-container-searchbar">
+                <label for="search-bar">
+                    <input type="text" placeholder="Recipe search" id="search-bar" name="recipe"/>
+                </label>
+            </div>
         </div>
         <div class="outer-container-search-results">
             <div class="inner-container-search-results"><p>Search results</p></div>
