@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
     <title>Home</title>
 </head>
 <body>
 <header class="outer-container-header">
     <div class="inner-container-header">
-        <div class="title-and-navbar"><h1>The Clueless Cook</h1>
+        <div class="title-and-navbar"><h1 class="page-title">The Clueless Cook</h1>
             <nav>
                 <ul class="ul-header">
                     <li><a href="./index.html"> Home</a></li>
@@ -19,7 +19,14 @@
             </nav>
         </div>
     </div>
-    <div class="hero-image-div"><img src="../assets/images/hero-image.jpg" alt="Hero image"></div>
+    <div class="hero-image-outer-container">
+        <div class="hero-image-inner-container">
+            <div class="center-left">
+                <h2>Delicious Recipes.</h2>
+                <h2>Daily Updated.</h2>
+            </div>
+        </div>
+    </div>
 </header>
 <main class="outer-container-main">
     <div class="inner-container-main">
@@ -31,6 +38,13 @@
                 <label for="search-bar">
                     <input type="text" placeholder="Recipe search" id="search-bar" name="recipe"/>
                 </label>
+                <label for="meals"></label>
+                <select name="meals" id="meals">
+                    <option value="meal-type">Meal type</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
             </div>
         </div>
         <div class="outer-container-search-results">
