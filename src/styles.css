@@ -18,39 +18,44 @@ h2, h3, h4, h5, h6, body {
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 .outer-container-header {
-    border: 1px solid blue;
+    border: 2px solid blue;
     display: flex;
     flex-direction: column;
 }
 
 .inner-container-header {
-    border: 1px solid yellow;
+    border: 2px solid yellow;
 }
 
 .outer-container-main {
-    border: 1px solid red;
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
 }
 
 .inner-container-main {
-    border: 1px solid green;
+    border: 2px solid green;
 }
 
 .outer-container-footer {
-    border: 1px solid blue;
+    border: 2px solid blue;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inner-container-footer {
-    border: 1px solid yellow;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 /* --------------- 4.1 Header ------------------- */
 .title-and-navbar {
     padding: 25px;
-    border: 1px solid red;
+    border: 2px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -59,7 +64,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .ul-header {
-    border: 1px solid green;
+    border: 2px solid green;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -67,7 +72,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .page-title {
-    border: 1px solid red;
+    border: 2px solid red;
     color: #283E53;
     font-weight: lighter;
 }
@@ -86,54 +91,83 @@ h2, h3, h4, h5, h6, body {
 }
 
 .hero-image-outer-container {
-    border: 1px solid blue;
+    border: 2px solid blue;
     background-image: url("assets/images/hero-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     flex-basis: 450px;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: white;
 }
 
 .hero-image-inner-container {
-    border: 1px solid red;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.center-left h2 {
-    font-size: xxx-large;
+.hero-image-inner-container button {
+    background-color: #70B6BE;
+    color: #293E53;
     font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin-top: 1em;
+}
+
+.line-header-one {
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+
+.line-header-two {
+    font-size: xxx-large;
+    font-weight: normal;
 }
 
 /* --------------- 4.2 Carousel ------------- */
 .outer-container-carousel {
-    border: 1px solid blue;
+    border: 2px solid blue;
     margin: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .inner-container-carousel {
-    border: 1px solid yellow;
+    border: 2px solid yellow;
 }
 
 /* --------------- 4.3 Search bar ------------- */
 .outer-container-searchbar {
-    border: 1px solid red;
+    border: 2px solid red;
     background-color: #283E53;
     padding: 50px;
 }
 
 .inner-container-searchbar {
-    border: 1px solid green;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* --------------- 4.4 Search results ------------- */
 .outer-container-search-results {
-    border: 1px solid blue;
+    border: 2px solid blue;
     padding: 500px;
 }
 
 .inner-container-search-results {
-    border: 1px solid yellow;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* --------------- 4.5 Footer ------------- */
@@ -141,4 +175,12 @@ h2, h3, h4, h5, h6, body {
 .outer-container-footer {
     background-color: #283E53;
     padding: 150px;
+}
+
+.inner-container-footer h3 {
+    color: #71B6BD;
+}
+
+.inner-container-footer p {
+    color: white;
 }
