@@ -292,10 +292,46 @@ h2, h3, h4, h5, h6, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 #search-bar {
-    padding: 10px;
+    height: 35px;
+    width: 225px;
+    margin-right: 20px;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+}
+
+.search-bar-input {
+    text-indent: 1em;
+    font-size: medium;
+    letter-spacing: 0.1mm;
+}
+
+.outer-container-searchbar select {
+    height: 35px;
+    width: 175px;
+    margin-right: 20px;
+    text-indent: 1em;
+    font-size: medium;
+    letter-spacing: 0.1mm;
+    color: #283E53;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+}
+
+#search-button {
+    height: 35px;
+    width: 175px;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 0.1mm;
+    border: none;
+    background-color: #70B6BE;
+    color: #283E53;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
 }
 
 /* --------------- 4.4 Search results ------------- */
