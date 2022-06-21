@@ -132,12 +132,18 @@ h2, h3, h4, h5, h6, body {
     font-weight: normal;
 }
 
+.hero-image-inner-container a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #293E53;
+}
+
 /* --------------- 4.2 Carousel ------------- */
 .outer-container-carousel {
     border: 2px solid blue;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .inner-container-carousel {
@@ -145,17 +151,24 @@ h2, h3, h4, h5, h6, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 30px;
+    height: 300px;
 }
 
 .carousel-card-one {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+    margin-top: -40px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(244, 244, 244, 1) 70%, rgba(230, 230, 230, 1) 95%);
 }
 
 .carousel-card-image-one {
-    height: 250px;
+    height: 225px;
     width: 400px;
+    border-radius: 3px 3px 0 0;
 }
 
 .recipe-title-one {
@@ -164,6 +177,7 @@ h2, h3, h4, h5, h6, body {
     justify-content: flex-start;
     margin-left: 1em;
     font-weight: bold;
+    color: #4E4E4E;
 }
 
 .calories-ingredients-time-one {
@@ -172,17 +186,23 @@ h2, h3, h4, h5, h6, body {
     justify-content: space-between;
     margin-left: 1em;
     margin-right: 1em;
+    color: #4E4E4E;
 }
 
 .carousel-card-two {
-    border: 2px solid blue;
     display: flex;
     flex-direction: column;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+    margin-top: -60px;
+    margin-bottom: -20px;
+    background-color: #F7F7F7;
 }
 
 .carousel-card-image-two {
-    height: 250px;
-    width: 400px;
+    height: 267px;
+    width: 475px;
+    border-radius: 3px 3px 0 0;
 }
 
 .recipe-title-two {
@@ -191,6 +211,7 @@ h2, h3, h4, h5, h6, body {
     justify-content: flex-start;
     margin-left: 1em;
     font-weight: bold;
+    color: #4E4E4E;
 }
 
 .calories-ingredients-time-two {
@@ -199,17 +220,23 @@ h2, h3, h4, h5, h6, body {
     justify-content: space-between;
     margin-left: 1em;
     margin-right: 1em;
+    color: #4E4E4E;
 }
 
 .carousel-card-three {
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+    margin-top: -40px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(244, 244, 244, 1) 70%, rgba(230, 230, 230, 1) 95%);
 }
 
 .carousel-card-image-three {
-    height: 250px;
+    height: 225px;
     width: 400px;
+    border-radius: 3px 3px 0 0;
 }
 
 .recipe-title-three {
@@ -218,6 +245,7 @@ h2, h3, h4, h5, h6, body {
     justify-content: flex-start;
     margin-left: 1em;
     font-weight: bold;
+    color: #4E4E4E;
 }
 
 .calories-ingredients-time-three {
@@ -226,6 +254,30 @@ h2, h3, h4, h5, h6, body {
     justify-content: space-between;
     margin-left: 1em;
     margin-right: 1em;
+    color: #4E4E4E;
+}
+
+.time-image-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.time-image {
+    margin-right: 1em;
+}
+
+.calories-ingredients-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.calories-ingredients-div p {
+    margin-right: 5px;
+}
+
+.calories-number, .ingredients-number {
+    font-weight: bold;
 }
 
 /* --------------- 4.3 Search bar ------------- */
@@ -240,6 +292,10 @@ h2, h3, h4, h5, h6, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+#search-bar {
+    padding: 10px;
 }
 
 /* --------------- 4.4 Search results ------------- */
