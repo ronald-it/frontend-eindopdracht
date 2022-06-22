@@ -104,8 +104,12 @@
         <div class="outer-container-searchbar">
             <div class="inner-container-searchbar">
                 <label for="search-bar">
-                    <input class="search-bar-input" type="text" placeholder="Recipe search" id="search-bar" name="recipe"/>
+                    <input class="search-bar-input" type="text" placeholder="Recipe search" id="search-bar"
+                           name="recipe"/>
                 </label>
+                <button id="magnifying-glass" type="button">
+                    <img class="search-icon" src="assets/icons/search.png" alt="search icon">
+                </button>
                 <label for="meals"></label>
                 <select name="meals" id="meals">
                     <option value="meal-type">Meal type</option>
@@ -144,8 +148,46 @@
 </main>
 <footer class="outer-container-footer">
     <div class="inner-container-footer">
-        <h3>Footer</h3>
-        <p>Info</p>
+        <div class="column-footer">
+            <h3>Information</h3>
+            <br>
+            <p>Nullam a enim</p>
+            <p>Quisque cursus</p>
+            <p>Cras egestas</p>
+            <p>Nunc vitae</p>
+        </div>
+        <div class="column-footer">
+            <h3>About</h3>
+            <br>
+            <p>Quisque cursus</p>
+            <p>Cras egestas</p>
+            <p>Nunc vitae</p>
+        </div>
+        <div class="column-footer">
+            <h3>Contact</h3>
+            <br>
+            <p>Cras egestas</p>
+            <p>Nunc vitae</p>
+            <p>Nullam a enim</p>
+        </div>
+        <div id="column-footer-four" class="column-footer">
+            <h3>Social</h3>
+            <br>
+            <div class="social-media-links">
+                <div class="social-media-circle">
+                    <img class="social-media-icon" src="assets/icons/facebook.svg" alt="search icon">
+                </div>
+                <div class="social-media-circle">
+                    <img class="social-media-icon" src="assets/icons/instagram.svg" alt="search icon">
+                </div>
+                <div class="social-media-circle">
+                    <img class="social-media-icon" src="assets/icons/linkedin.svg" alt="search icon">
+                </div>
+                <div class="social-media-circle">
+                    <img class="social-media-icon" src="assets/icons/twitter.svg" alt="search icon">
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 <script type="module" src="main.js"></script>

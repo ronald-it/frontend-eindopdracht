@@ -40,15 +40,19 @@ h2, h3, h4, h5, h6, body {
 .outer-container-footer {
     border: 2px solid blue;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 .inner-container-footer {
     border: 2px solid yellow;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    gap: 10em;
+    align-items: flex-start;
 }
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
@@ -298,8 +302,8 @@ h2, h3, h4, h5, h6, body {
 #search-bar {
     height: 35px;
     width: 225px;
-    margin-right: 20px;
-    border-radius: 3px;
+    border: none;
+    border-radius: 3px 0 0 3px;
     box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
 }
 
@@ -307,6 +311,25 @@ h2, h3, h4, h5, h6, body {
     text-indent: 1em;
     font-size: medium;
     letter-spacing: 0.1mm;
+}
+
+#magnifying-glass {
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    margin-left: -5px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 0 3px 3px 0;
+}
+
+.search-icon {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .outer-container-searchbar select {
@@ -317,6 +340,7 @@ h2, h3, h4, h5, h6, body {
     font-size: medium;
     letter-spacing: 0.1mm;
     color: #283E53;
+    border: none;
     border-radius: 3px;
     box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
 }
@@ -337,7 +361,8 @@ h2, h3, h4, h5, h6, body {
 /* --------------- 4.4 Search results ------------- */
 .outer-container-search-results {
     border: 2px solid blue;
-    padding: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .inner-container-search-results {
@@ -351,7 +376,16 @@ h2, h3, h4, h5, h6, body {
 
 .outer-container-footer {
     background-color: #283E53;
-    padding: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.column-footer {
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
 }
 
 .inner-container-footer h3 {
@@ -359,5 +393,35 @@ h2, h3, h4, h5, h6, body {
 }
 
 .inner-container-footer p {
-    color: white;
+    color: #D1D2D6;
+}
+
+#column-footer-four {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.social-media-circle {
+    background-color: #71B6BD;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.social-media-icon {
+    height: 20px;
+    width: 20px;
 }
