@@ -55,7 +55,7 @@ h2, h3, h4, h5, h6, body {
     align-items: flex-start;
 }
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
+/* ------------------------------- 4. Areas Home ---------------------------------------- */
 /* --------------- 4.1 Header ------------------- */
 .title-and-navbar {
     padding: 25px;
@@ -361,6 +361,9 @@ h2, h3, h4, h5, h6, body {
 /* --------------- 4.4 Search results ------------- */
 .outer-container-search-results {
     border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -370,6 +373,64 @@ h2, h3, h4, h5, h6, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    flex-basis: 1300px;
+}
+
+.carousel-card-result {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+    background-color: #F7F7F7;
+}
+
+.carousel-card-image-result {
+    height: 225px;
+    width: 400px;
+    border-radius: 3px 3px 0 0;
+}
+
+.recipe-title-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 1em;
+    font-weight: bold;
+    color: #4E4E4E;
+}
+
+.calories-ingredients-time-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #4E4E4E;
+}
+
+.time-image-div-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.time-image-result {
+    margin-right: 1em;
+}
+
+.calories-ingredients-div-result {
+    display: flex;
+    flex-direction: row;
+}
+
+.calories-ingredients-div-result p {
+    margin-right: 5px;
+}
+
+.calories-number-result, .ingredients-number-result {
+    font-weight: bold;
 }
 
 /* --------------- 4.5 Footer ------------- */
@@ -424,4 +485,101 @@ h2, h3, h4, h5, h6, body {
 .social-media-icon {
     height: 20px;
     width: 20px;
+}
+
+/* ------------------------------- 4. Areas Recipe Page ---------------------------------------- */
+/* --------------- 4.1 Main ------------------- */
+
+.outer-container-main-recipe {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-container-main-recipe {
+    border: 2px solid green;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 1050px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title-and-time-image {
+    border: 3px solid blue;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.time-image-div-recipe {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 110px;
+}
+
+.recipe-name {
+    border: 3px solid blue;
+    margin-bottom: 2em;
+}
+
+.recipe-text-and-image {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.recipe-instructions {
+    border: 3px solid green;
+    flex-basis: 500px;
+}
+
+.recipe-picture {
+    border: 3px solid red;
+    height: 400px;
+    width: 400px;
+}
+
+.recipe-image {
+    border: 3px solid blue;
+    height: 100%;
+    width: 100%;
+}
+
+.recipe-ingredients-and-nutrients {
+    border: 3px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1050px;
+    margin-bottom: 2em;
+}
+
+.recipe-ingredients {
+    border: 3px solid green;
+    flex-basis: 400px;
+}
+
+.ingredients-ul {
+    margin-left: 1em;
+}
+
+.recipe-nutrients {
+    border: 3px solid red;
+    flex-basis: 400px;
+
+}
+
+.recipe-health-labels {
+    border: 3px solid blue;
 }
