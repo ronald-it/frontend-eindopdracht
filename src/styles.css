@@ -743,8 +743,42 @@ h2, h3, h4, h5, h6, body {
 }
 
 .amount-div-calculator {
-    border: 3px solid green;
+    border: 3px solid red;
     margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.amount-input-calculator {
+    width: 125px;
+}
+
+.amount-div-calculator input, button {
+    border-radius: 5px;
+}
+
+.amount-div-calculator input {
+    height: 40px;
+}
+
+.amount-input-calculator * {
+    height: 40px;
+}
+
+#amount-calculator {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#add-button-calculator {
+    margin-left: 1em;
+    width: 100px;
+    font-weight: bold;
+    font-size: large;
+    background-color: #70b6be;
+    color: #283E53;
 }
 
 .calorie-calculator-calculation-table-div {
