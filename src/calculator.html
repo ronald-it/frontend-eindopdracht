@@ -20,12 +20,75 @@
         </div>
     </div>
 </header>
-<main class="outer-container-main">
-    <div class="inner-container-main"><p>Calorie calculator</p>
-        <div class="search-bar"><p>Searchbar</p></div>
-        <div class="results"><p>Results</p></div>
-        <div class="amount"><p>Amount</p></div>
-        <div class="calculation"><p>Calculation</p></div>
+<main class="outer-container-main-calculator">
+    <div class="inner-container-main-calculator">
+        <h2 class="calorie-calculator-title">Calorie Calculator</h2>
+        <div class="search-bar-div-calculator">
+            <label for="search-bar-calculator">
+                <input class="search-bar-input-calculator" type="text" placeholder="Barcode / product"
+                       id="search-bar-calculator"
+                       name="barcode-or-product"/>
+            </label>
+            <button id="magnifying-glass-calculator" type="button">
+                <img class="search-icon-calculator" src="assets/icons/search.png" alt="search icon">
+            </button>
+            <button id="search-button-calculator" type="button">Search 🡢</button>
+        </div>
+        <div class="calorie-calculator-product-table-div">
+            <table class="calorie-calculator-product-table">
+                <thead>
+                </thead>
+                <tbody>
+                <tr class="row-one-product">
+                    <td>Product</td>
+                    <td>Quantity</td>
+                    <td>Label</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>60</td>
+                    <td>Gram</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="amount-div-calculator">
+            <label for="amount-calculator">
+                <input class="amount-input-calculator" type="text"
+                       id="amount-calculator" name="barcode-or-product"/>
+            </label>
+            <button id="add-button-calculator" type="button">Add</button>
+        </div>
+        <div class="calorie-calculator-calculation-table-div">
+            <table class="calorie-calculator-calculation-table">
+                <tbody>
+                <tr class="row-one-calculation">
+                    <td>Product</td>
+                    <td>Calories</td>
+                    <td>Fat</td>
+                    <td>Carbs</td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td>149 kcal</td>
+                    <td>8 g</td>
+                    <td>12 g</td>
+                </tr>
+                <tr class="row-three-calculation">
+                    <td>Mars</td>
+                    <td>234 kcal</td>
+                    <td>12 g</td>
+                    <td>31 g</td>
+                </tr>
+                <tr class="total-row">
+                    <td>Total</td>
+                    <td>383 kcal</td>
+                    <td>20 g</td>
+                    <td>43 g</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </main>
 <footer class="outer-container-footer">
