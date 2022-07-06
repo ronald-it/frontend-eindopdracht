@@ -376,7 +376,7 @@ h2, h3, h4, h5, h6, body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2em;
-    flex-basis: 1300px;
+    flex-basis: 1500px;
 }
 
 .carousel-card-result {
@@ -388,8 +388,8 @@ h2, h3, h4, h5, h6, body {
 }
 
 .carousel-card-image-result {
-    height: 225px;
-    width: 400px;
+    height: 255px;
+    width: 450px;
     border-radius: 3px 3px 0 0;
 }
 
@@ -432,6 +432,11 @@ h2, h3, h4, h5, h6, body {
 
 .calories-number-result, .ingredients-number-result {
     font-weight: bold;
+}
+
+#recipe-link {
+    display: block;
+    text-decoration: none;
 }
 
 /* --------------- 4.5 Footer ------------- */
