@@ -1,6 +1,6 @@
 import klokje  from "../assets/icons/time.png"
 
-const createElement = (recipesArray) => {
+const createRecipeCardHome = (recipesArray) => {
     const recipeList = document.getElementById('inner-container-search-results');
     recipeList.replaceChildren();
 
@@ -34,4 +34,4 @@ const createElement = (recipesArray) => {
     })
 }
 
-export default createElement;
+export default createRecipeCardHome;

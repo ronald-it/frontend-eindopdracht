@@ -1,5 +1,5 @@
 // Naar de relevante HTML elementen refereren
-import fetchData from "./fetchData";
+import fetchDataHome from "./fetchDataHome";
 
 const ingredientInput = document.getElementById('search-bar')
 const mealTypeInput = document.getElementById('meals')
@@ -15,9 +15,18 @@ submitButton.addEventListener("click", () => {
     // const cuisine = cuisineInput.value;
     // const diet = dietInput.value;
     // const time = timeInput.value;
-    fetchData(ingredient, mealType);
+    fetchDataHome(ingredient, mealType);
 })
 
 ingredientInput.addEventListener("keyup", (e) => {
     console.log(e.target.value);
+    console.log(e.key);
+    if (e.key === "Enter") {
+        const ingredient = ingredientInput.value;
+        const mealType = mealTypeInput.value;
+        // const cuisine = cuisineInput.value;
+        // const diet = dietInput.value;
+        // const time = timeInput.value;
+        fetchDataHome(ingredient, mealType);
+    }
 })

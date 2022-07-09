@@ -1,12 +1,12 @@
 import axios from "axios";
-import createElement from "./createElement";
+import createRecipeCardHome from "./createRecipeCardHome";
 
 // Fetch data functie
 
-const fetchData = async (ingredient, mealType) => {
-    console.log('fetch data script is running');
-    console.log(ingredient);
-    console.log(mealType);
+const fetchDataHome = async (ingredient, mealType) => {
+    // console.log('fetch data script is running');
+    // console.log(ingredient);
+    // console.log(mealType);
     // console.log(cuisine);
     // console.log(diet);
     // console.log(time);
@@ -31,8 +31,8 @@ const fetchData = async (ingredient, mealType) => {
             }
 
         });
-        console.log(response.data.hits);
-        createElement(response.data.hits);
+        // console.log(response.data.hits);
+        createRecipeCardHome(response.data.hits);
     } catch (err) {
         console.error(err)
     }
@@ -41,4 +41,4 @@ const fetchData = async (ingredient, mealType) => {
 // Create Elements functie aanroepen en parameters toevoegen
 // Catch block
 
-export default fetchData;
+export default fetchDataHome;
