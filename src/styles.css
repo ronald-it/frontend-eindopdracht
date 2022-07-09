@@ -385,6 +385,8 @@ h2, h3, h4, h5, h6, body {
     border-radius: 3px;
     box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
     background-color: #F7F7F7;
+    height: 375px;
+    width: 450px
 }
 
 .carousel-card-image-result {
@@ -398,6 +400,8 @@ h2, h3, h4, h5, h6, body {
     flex-direction: row;
     justify-content: flex-start;
     margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: -1em;
     font-weight: bold;
     color: #4E4E4E;
 }

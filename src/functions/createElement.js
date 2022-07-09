@@ -1,3 +1,5 @@
+import klokje  from "../assets/icons/time.png"
+
 const createElement = (recipesArray) => {
     const recipeList = document.getElementById('inner-container-search-results');
     recipeList.replaceChildren();
@@ -22,7 +24,7 @@ const createElement = (recipesArray) => {
                             <p class="ingredients-text-result">Ingredients</p>
                         </div>
                         <div class="time-image-div-result">
-                            <img class="time-image-result" src="../assets/icons/time.png" alt="time">
+                            <img class="time-image-result" src="${klokje}" alt="time">
                             <p class="time-text-result">${entry.recipe.totalTime} min.</p>
                         </div>
                     </div>
