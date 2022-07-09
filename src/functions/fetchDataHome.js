@@ -3,7 +3,7 @@ import createRecipeCardHome from "./createRecipeCardHome";
 
 // Fetch data functie
 
-const fetchDataHome = async (ingredient, mealType) => {
+const fetchDataHome = async (ingredient, mealType, cuisineType, diet) => {
     // console.log('fetch data script is running');
     // console.log(ingredient);
     // console.log(mealType);
@@ -27,7 +27,9 @@ const fetchDataHome = async (ingredient, mealType) => {
                 app_id: API_ID,
                 app_key: API_KEY,
                 q: ingredient,
-                mealType: mealType
+                mealType: mealType,
+                cuisineType: cuisineType,
+                diet: diet
             }
 
         });

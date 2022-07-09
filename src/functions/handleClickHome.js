@@ -3,8 +3,8 @@ import fetchDataHome from "./fetchDataHome";
 
 const ingredientInput = document.getElementById('search-bar')
 const mealTypeInput = document.getElementById('meals')
-// const cuisineInput = document.getElementById('cuisine')
-// const dietInput = document.getElementById('diet')
+const cuisineInput = document.getElementById('cuisine')
+const dietInput = document.getElementById('diet')
 // const timeInput = document.getElementById('time')
 const submitButton = document.getElementById('search-button');
 
@@ -12,10 +12,10 @@ const submitButton = document.getElementById('search-button');
 submitButton.addEventListener("click", () => {
     const ingredient = ingredientInput.value;
     const mealType = mealTypeInput.value;
-    // const cuisine = cuisineInput.value;
-    // const diet = dietInput.value;
+    const cuisineType = cuisineInput.value;
+    const diet = dietInput.value;
     // const time = timeInput.value;
-    fetchDataHome(ingredient, mealType);
+    fetchDataHome(ingredient, mealType, cuisineType, diet);
 })
 
 ingredientInput.addEventListener("keyup", (e) => {
@@ -24,9 +24,9 @@ ingredientInput.addEventListener("keyup", (e) => {
     if (e.key === "Enter") {
         const ingredient = ingredientInput.value;
         const mealType = mealTypeInput.value;
-        // const cuisine = cuisineInput.value;
-        // const diet = dietInput.value;
+        const cuisineType = cuisineInput.value;
+        const diet = dietInput.value;
         // const time = timeInput.value;
-        fetchDataHome(ingredient, mealType);
+        fetchDataHome(ingredient, mealType, cuisineType, diet);
     }
 })
