@@ -24,7 +24,7 @@ const fetchDataRecipe = async () => {
             }
 
         });
-        console.log('Hoi');
+        console.log(response.data.hits);
 
     } catch (err) {
         console.error(err)
