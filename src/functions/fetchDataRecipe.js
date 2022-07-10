@@ -24,14 +24,20 @@ const fetchDataRecipe = async () => {
             }
 
         });
-        console.log(response.data.hits);
+        // Create Elements functie aanroepen en parameters toevoegen
+        console.log(response.data.hits[0].recipe.uri);
+        const uri = response.data.hits[0].recipe.uri;
+        const id = uri.split("_")[1];
+        console.log(id);
+
+        // Catch block
 
     } catch (err) {
         console.error(err)
     }
 
 }
-// Create Elements functie aanroepen en parameters toevoegen
-// Catch block
+
+fetchDataRecipe();
 
 export default fetchDataRecipe;

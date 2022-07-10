@@ -5,8 +5,10 @@ const createRecipeCardHome = (recipesArray) => {
     recipeList.replaceChildren();
 
     return recipesArray.map((entry) => {
+        const id = entry.recipe.uri.split("_")[1];
+
         recipeList.innerHTML += `
-        <a id="recipe-link" href="../recipepage.html">
+        <a id="recipe-link" href="../recipepage.html?id=${id}">
             <div class="carousel-card-result">
                     <img class="carousel-card-image-result"
                          src="${entry.recipe.image}"

@@ -26,14 +26,15 @@ const fetchDataCarousel = async () => {
 
         });
         console.log(response.data.hits);
+        // Create Elements functie aanroepen en parameters toevoegen
         createCarouselHome(response.data.hits);
 
+        // Catch block
     } catch (err) {
         console.error(err)
     }
-
 }
-// Create Elements functie aanroepen en parameters toevoegen
-// Catch block
+
+fetchDataCarousel();
 
 export default fetchDataCarousel;

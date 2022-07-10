@@ -23,10 +23,10 @@ ingredientInput.addEventListener("keyup", (e) => {
     console.log(e.key);
     if (e.key === "Enter") {
         const ingredient = ingredientInput.value;
-        const mealType = mealTypeInput.value;
-        const cuisineType = cuisineInput.value;
-        const diet = dietInput.value;
+        // const mealType = mealTypeInput.value;
+        // const cuisineType = cuisineInput.value;
+        // const diet = dietInput.value;
         // const time = timeInput.value;
-        fetchDataHome(ingredient, mealType, cuisineType, diet);
+        fetchDataHome(ingredient);
     }
 })
