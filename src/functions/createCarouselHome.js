@@ -13,7 +13,8 @@ const carouselCreator = (potatoArray) => {
 
     for (let i = 0; i < 3; i++) {
         if (i === 0) {
-            recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html">
+            const id = potatoArray[rounder].recipe.uri.split("_")[1];
+            recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html?id=${id}">
                     <div class="carousel-card-one">
                     <img class="carousel-card-image-one"
                          src="${potatoArray[rounder].recipe.image}"
@@ -39,7 +40,8 @@ const carouselCreator = (potatoArray) => {
                     </a>`
         } else if (i === 1) {
             if (rounder >= 2 && rounder <= 17) {
-                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html">
+                const id = potatoArray[rounder + 1].recipe.uri.split("_")[1];
+                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html?id=${id}">
                     <div class="carousel-card-two">
                     <img class="carousel-card-image-two"
                          src="${potatoArray[rounder + 1].recipe.image}"
@@ -64,7 +66,8 @@ const carouselCreator = (potatoArray) => {
                     </div>
                     </a>`
             } else if (rounder < 2) {
-                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html">
+                const id = potatoArray[rounder + 1].recipe.uri.split("_")[1];
+                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html?id=${id}">
                     <div class="carousel-card-two">
                     <img class="carousel-card-image-two"
                          src="${potatoArray[rounder + 1].recipe.image}"
@@ -89,7 +92,8 @@ const carouselCreator = (potatoArray) => {
                     </div>
                     </a>`
             } else if (rounder > 17) {
-                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html">
+                const id = potatoArray[rounder - 1].recipe.uri.split("_")[1];
+                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html?id=${id}">
                     <div class="carousel-card-two">
                     <img class="carousel-card-image-two"
                          src="${potatoArray[rounder - 1].recipe.image}"
@@ -116,7 +120,8 @@ const carouselCreator = (potatoArray) => {
             }
         } else if (i === 2) {
             if (rounder >= 2 && rounder <= 17) {
-                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html">
+                const id = potatoArray[rounder + 2].recipe.uri.split("_")[1];
+                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html?id=${id}">
                     <div class="carousel-card-three">
                     <img class="carousel-card-image-three"
                          src="${potatoArray[rounder + 2].recipe.image}"
@@ -141,7 +146,8 @@ const carouselCreator = (potatoArray) => {
                     </div>
                     </a>`
             } else if (rounder < 2) {
-                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html">
+                const id = potatoArray[rounder + 2].recipe.uri.split("_")[1];
+                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html?id=${id}">
                     <div class="carousel-card-three">
                     <img class="carousel-card-image-three"
                          src="${potatoArray[rounder + 2].recipe.image}"
@@ -167,7 +173,8 @@ const carouselCreator = (potatoArray) => {
                     </a>`
             }
             else if (rounder > 17) {
-                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html">
+                const id = potatoArray[rounder - 2].recipe.uri.split("_")[1];
+                recipeCardCarousel.innerHTML += `<a id="recipe-link" href="../recipepage.html?id=${id}">
                     <div class="carousel-card-three">
                     <img class="carousel-card-image-three"
                          src="${potatoArray[rounder - 2].recipe.image}"
