@@ -299,6 +299,14 @@ h2, h3, h4, h5, h6, body {
     align-items: center;
 }
 
+#submit-form {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 #search-bar {
     height: 35px;
     width: 225px;

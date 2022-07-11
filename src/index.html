@@ -37,68 +37,70 @@
         </div>
         <div class="outer-container-searchbar">
             <div class="inner-container-searchbar">
-                <label for="search-bar">
-                    <input class="search-bar-input" type="text" placeholder="Recipe search" id="search-bar"
-                           name="recipe"/>
-                </label>
-                <button id="magnifying-glass" type="button">
-                    <img class="search-icon" src="assets/icons/search.png" alt="search icon">
-                </button>
-                <label for="meals"></label>
-                <select name="meals" id="meals">
-                    <option value="meal-type">Meal type</option>
-                    <option value="breakfast">Breakfast</option>
-                    <option value="brunch">Brunch</option>
-                    <option value="lunch">Lunch</option>
-                    <option value="dinner">Dinner</option>
-                    <option value="snack">Snack</option>
-                    <option value="teatime">Tea time</option>
-                </select>
-                <label for="cuisine"></label>
-                <select name="cuisine" id="cuisine">
-                    <option value="cuisine">Cuisine</option>
-                    <option value="american">American</option>
-                    <option value="asian">Asian</option>
-                    <option value="british">British</option>
-                    <option value="caribbean">Caribbean</option>
-                    <option value="central europe">Central Europe</option>
-                    <option value="chinese">Chinese</option>
-                    <option value="eastern europe">Eastern Europe</option>
-                    <option value="french">French</option>
-                    <option value="greek">Greek</option>
-                    <option value="indian">Indian</option>
-                    <option value="italian">Italian</option>
-                    <option value="japanese">Japanese</option>
-                    <option value="korean">Korean</option>
-                    <option value="kosher">Kosher</option>
-                    <option value="mediterranean">Mediterranean</option>
-                    <option value="mexican">Mexican</option>
-                    <option value="middle eastern">Middle Eastern</option>
-                    <option value="nordic">Nordic</option>
-                    <option value="south american">South American</option>
-                    <option value="south east asian">South East Asian</option>
-                    <option value="world">World</option>
-                </select>
-                <label for="diet"></label>
-                <select name="diet" id="diet">
-                    <option value="diet">Diet</option>
-                    <option value="balanced">Balanced</option>
-                    <option value="high-fiber">High-Fiber</option>
-                    <option value="high-protein">High-Protein</option>
-                    <option value="low-carb">Low-Carb</option>
-                    <option value="low-fat">Low-Fat</option>
-                    <option value="low-sodium">Low-Sodium</option>
-                </select>
-                <label for="time"></label>
-                <select name="time" id="time">
-                    <option value="time">Time</option>
-                    <option value="15">< 15</option>
-                    <option value="29">15-29</option>
-                    <option value="44">30-44</option>
-                    <option value="59">45-59</option>
-                    <option value="60">> 60</option>
-                </select>
-                <button type="submit" id="search-button">Search</button>
+                <form id="submit-form">
+                    <label for="search-bar">
+                        <input class="search-bar-input" type="text" placeholder="Recipe search" id="search-bar"
+                               name="recipe"/>
+                    </label>
+                    <button id="magnifying-glass" type="button">
+                        <img class="search-icon" src="assets/icons/search.png" alt="search icon">
+                    </button>
+                    <label for="meals"></label>
+                    <select name="meals" id="meals">
+                        <option value="meal-type">Meal type</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="brunch">Brunch</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="snack">Snack</option>
+                        <option value="teatime">Tea time</option>
+                    </select>
+                    <label for="cuisine"></label>
+                    <select name="cuisine" id="cuisine">
+                        <option value="cuisine">Cuisine</option>
+                        <option value="american">American</option>
+                        <option value="asian">Asian</option>
+                        <option value="british">British</option>
+                        <option value="caribbean">Caribbean</option>
+                        <option value="central europe">Central Europe</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="eastern europe">Eastern Europe</option>
+                        <option value="french">French</option>
+                        <option value="greek">Greek</option>
+                        <option value="indian">Indian</option>
+                        <option value="italian">Italian</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="korean">Korean</option>
+                        <option value="kosher">Kosher</option>
+                        <option value="mediterranean">Mediterranean</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="middle eastern">Middle Eastern</option>
+                        <option value="nordic">Nordic</option>
+                        <option value="south american">South American</option>
+                        <option value="south east asian">South East Asian</option>
+                        <option value="world">World</option>
+                    </select>
+                    <label for="diet"></label>
+                    <select name="diet" id="diet">
+                        <option value="diet">Diet</option>
+                        <option value="balanced">Balanced</option>
+                        <option value="high-fiber">High-Fiber</option>
+                        <option value="high-protein">High-Protein</option>
+                        <option value="low-carb">Low-Carb</option>
+                        <option value="low-fat">Low-Fat</option>
+                        <option value="low-sodium">Low-Sodium</option>
+                    </select>
+                    <label for="time"></label>
+                    <select name="time" id="time">
+                        <option value="time">Time</option>
+                        <option value="15">< 15</option>
+                        <option value="29">15-29</option>
+                        <option value="44">30-44</option>
+                        <option value="59">45-59</option>
+                        <option value="60">> 60</option>
+                    </select>
+                    <button type="submit" id="search-button">Search</button>
+                </form>
             </div>
         </div>
         <div class="outer-container-search-results">

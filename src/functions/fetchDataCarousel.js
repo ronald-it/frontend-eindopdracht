@@ -21,7 +21,7 @@ const fetchDataCarousel = async () => {
                 type: 'public',
                 app_id: API_ID,
                 app_key: API_KEY,
-                q: "wheat"
+                q: "chicken"
             }
 
         });
