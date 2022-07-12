@@ -1,32 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="assets/fonts/fonts.css">
-    <title>Recipe page</title>
-</head>
-<body>
-<header class="outer-container-header">
-    <div class="inner-container-header">
-        <div class="title-and-navbar"><h1 class="page-title">The Clueless Cook</h1>
-            <nav>
-                <ul class="ul-header">
-                    <li><a href="./index.html"> Home</a></li>
-                    <li><a href=#outer-container-footer> About</a></li>
-                    <li><a href="./calculator.html"> Calculator</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-<main class="outer-container-main-recipe">
-    <div class="inner-container-main-recipe" id="inner-container-main-recipe">
-<!--        <div class="title-and-time-image">
+import klokje from "../assets/icons/time.png"
+
+const createRecipePage = (recipe) => {
+    const recipeInfo = document.getElementById('inner-container-main-recipe')
+    recipeInfo.replaceChildren();
+
+    recipeInfo.innerHTML = `        <div class="title-and-time-image">
             <h2 class="recipe-name">Recipe Name Here</h2>
             <div class="time-image-div-recipe">
-                <img class="time-image-recipe" src="assets/icons/time.png" alt="time">
-                <p class="time-text-recipe-number">20 </p>
+                <img class="time-image-recipe" src="${klokje}" alt="time">
+                <p class="time-text-recipe-number">${recipe.recipe.totalTime}</p>
                 <p class="time-text-recipe-minutes">min.</p>
             </div>
         </div>
@@ -123,54 +105,9 @@
                 <p>Shellfish-Free</p>
                 <p>Tree-Nut-Free</p>
             </div>
-        </div>-->
-    </div>
-</main>
-<footer id="outer-container-footer" class="outer-container-footer">
-    <div class="inner-container-footer">
-        <div class="column-footer">
-            <h3>Information</h3>
-            <br>
-            <p>Nullam a enim</p>
-            <p>Quisque cursus</p>
-            <p>Cras egestas</p>
-            <p>Nunc vitae</p>
-        </div>
-        <div class="column-footer">
-            <h3>About</h3>
-            <br>
-            <p>Quisque cursus</p>
-            <p>Cras egestas</p>
-            <p>Nunc vitae</p>
-        </div>
-        <div class="column-footer">
-            <h3>Contact</h3>
-            <br>
-            <p>Cras egestas</p>
-            <p>Nunc vitae</p>
-            <p>Nullam a enim</p>
-        </div>
-        <div id="column-footer-four" class="column-footer">
-            <h3>Social</h3>
-            <br>
-            <div class="social-media-links">
-                <div class="social-media-circle">
-                    <img class="social-media-icon" src="assets/icons/facebook.svg" alt="search icon">
-                </div>
-                <div class="social-media-circle">
-                    <img class="social-media-icon" src="assets/icons/instagram.svg" alt="search icon">
-                </div>
-                <div class="social-media-circle">
-                    <img class="social-media-icon" src="assets/icons/linkedin.svg" alt="search icon">
-                </div>
-                <div class="social-media-circle">
-                    <img class="social-media-icon" src="assets/icons/twitter.svg" alt="search icon">
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<script type="module" src="functions/getParamFromUri.js"></script>
-<!--<script type="module" src="main.js"></script>-->
-</body>
-</html>
+        </div>`
+
+    return recipeInfo;
+}
+
+export default createRecipePage;
