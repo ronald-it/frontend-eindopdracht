@@ -22,10 +22,10 @@ const fetchDataHome = async (ingredient, mealType, cuisineType, diet, time) => {
                 app_id: API_ID,
                 app_key: API_KEY,
                 q: ingredient,
-                mealType: mealType,
-                cuisineType: cuisineType,
-                diet: diet,
-                time: time
+                mealType: mealType ? ingredient : null,
+                cuisineType: cuisineType ? cuisineType : null,
+                diet: diet ? diet : null,
+                time: time ? time : null
             }
         });
         // console.log(response.data.hits);
