@@ -7,5 +7,6 @@ const productInput = document.getElementById('search-button-calculator')
 
 productInput.addEventListener("submit", (e) => {
     e.preventDefault();
+    console.log(e);
     fetchDataCalculatorSearch(productInput.value);
 })
