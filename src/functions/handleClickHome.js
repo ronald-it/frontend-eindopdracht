@@ -7,7 +7,7 @@ const dietInput = document.getElementById('diet')
 const timeInput = document.getElementById('time')
 const submitForm = document.getElementById('submit-form');
 
-// Click event voor handleClickHome
+// Submit event voor handleClickHome
 submitForm.addEventListener("submit", (e) => {
     e.preventDefault();
     fetchDataHome(ingredientInput.value, mealTypeInput.value, cuisineInput.value, dietInput.value, timeInput.value);

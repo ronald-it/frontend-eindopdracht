@@ -1,9 +1,8 @@
 import axios from "axios";
-import createRecipeCardHome from "./createRecipeCardHome";
 
 // Fetch data functie
+const fetchDataCalculatorSearch = async (product) => {
 
-const fetchDataHome = async (ingredient, mealType, cuisineType, diet, time) => {
     console.log('fetch data script is running');
 
     //Opslaan van URI en endpoint
@@ -11,7 +10,9 @@ const fetchDataHome = async (ingredient, mealType, cuisineType, diet, time) => {
     const endpoint = '/api/recipes/v2';
     const API_ID = '44920bbe';
     const API_KEY = 'e0b07558906ed952fb1226ace4bc0227'
+
     // Try block
+
     try {
         // Response van request opslaan
         const response = await axios.get(`${URI}${endpoint}`,{
@@ -19,19 +20,15 @@ const fetchDataHome = async (ingredient, mealType, cuisineType, diet, time) => {
                 type: 'public',
                 app_id: API_ID,
                 app_key: API_KEY,
-                q: ingredient,
-                mealType: mealType ? mealType : null,
-                cuisineType: cuisineType ? cuisineType : null,
-                diet: diet ? diet : null,
-                time: time ? time : null,
+                q: product
             }
         });
         // console.log(response.data.hits);
-        createRecipeCardHome(response.data.hits);
+        createTableCalculatorSearch(response.data.hits);
     } catch (err) {
         console.error(err)
     }
 }
 // Create Elements functie aanroepen en parameters toevoegen
 // Catch block
-export default fetchDataHome;
+export default fetchDataCalculatorSearch;
