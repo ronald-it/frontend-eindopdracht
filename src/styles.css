@@ -611,6 +611,10 @@ h2, h3, h4, h5, h6, body {
     margin-left: 2em;
 }
 
+.pietje-puk {
+    color: red;
+}
+
 .ingredients-ul li {
     color: #283E55;
 }

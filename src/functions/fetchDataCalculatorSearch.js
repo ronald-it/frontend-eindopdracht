@@ -1,4 +1,5 @@
 import axios from "axios";
+import createTableCalculatorSearch from "./createTableCalculatorSearch";
 
 // Fetch data functie
 const fetchDataCalculatorSearch = async (product) => {
@@ -7,7 +8,7 @@ const fetchDataCalculatorSearch = async (product) => {
 
     //Opslaan van URI en endpoint
     const URI = 'https://api.edamam.com';
-    const endpoint = '/api/recipes/v2';
+    const endpoint = '/api/food-database/v2/parser';
     const API_ID = '44920bbe';
     const API_KEY = 'e0b07558906ed952fb1226ace4bc0227'
 

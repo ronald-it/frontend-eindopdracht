@@ -2,7 +2,7 @@ const createTableCalculatorSearch = (product) => {
     const searchTable = document.getElementById('calorie-calculator-product-table-div');
     searchTable.replaceChildren();
 
-    searchTable.innerHTML = `<h2>${product.recipe.label}</h2>`;
+    searchTable.innerHTML = `<p>${product.recipe.label}</p>`;
 
     return searchTable;
 }

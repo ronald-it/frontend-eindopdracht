@@ -1,4 +1,5 @@
 import axios from "axios";
+import createRecipePage from "./createRecipePage";
 
 const fetchDataRecipePage = async (id) => {
     const URI = 'https://api.edamam.com';
@@ -7,7 +8,7 @@ const fetchDataRecipePage = async (id) => {
     const API_KEY = 'e0b07558906ed952fb1226ace4bc0227'
 
     try {
-        const response = await axios.get(`${URI}${endpoint}${id}`, {
+        const response = await axios.get(`${URI}${endpoint}/${id}`, {
             params: {
                 type: 'public',
                 app_id: API_ID,
@@ -16,7 +17,7 @@ const fetchDataRecipePage = async (id) => {
         });
 
         createRecipePage(response.data);
-        console.log(id)
+        console.log(response.data);
 
     } catch (err) {
         console.error(err);

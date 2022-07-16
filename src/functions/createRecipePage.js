@@ -5,7 +5,7 @@ const createRecipePage = (recipe) => {
     recipeInfo.replaceChildren();
 
     recipeInfo.innerHTML = `        <div class="title-and-time-image">
-            <h2 class="recipe-name">Recipe Name Here</h2>
+            <h2 class="recipe-name">${recipe.recipe.label}</h2>
             <div class="time-image-div-recipe">
                 <img class="time-image-recipe" src="${klokje}" alt="time">
                 <p class="time-text-recipe-number">${recipe.recipe.totalTime}</p>
@@ -32,80 +32,102 @@ const createRecipePage = (recipe) => {
             </div>
             <div class="recipe-picture">
                 <img class="recipe-image"
-                     src="https://www.giallozafferano.com/images/228-22832/spaghetti-with-tomato-sauce_1200x800.jpg"
-                     alt="spaghetti"/>
+                     src="${recipe.recipe.image}"
+                     alt="Recipe image"/>
             </div>
-        </div>
-        <div class="recipe-ingredients-and-nutrients">
-            <div class="recipe-ingredients">
-                <h3 class="recipe-ingredients-title">Ingredients</h3>
-                <br>
-                <ul class="ingredients-ul">
-                    <li>1/4 Pellentesque condimentum quam</li>
-                    <li>1 Phasellus sit amet</li>
-                    <li>1 In posuere nisi</li>
-                    <li>1/2 Nunc mattis mauris id massa</li>
-                    <li>4 Pellentesque condimentum quam</li>
-                    <li>1 Ut malesuada diam</li>
-                    <li>1/4 Phasellus efficitur</li>
-                    <li>2 Cras non elit id ipsum fermentum</li>
-                </ul>
-            </div>
-            <div class="recipe-nutrients">
-                <h3 class="recipe-nutrients-title">Nutrients</h3>
-                <div class="recipe-nutrients-table">
-                    <table>
-                        <thead>
+        </div>`
+
+    const recipeIngredientsAndNutrients = document.createElement('div')
+    recipeIngredientsAndNutrients.setAttribute('class', 'recipe-ingredients-and-nutrients');
+
+    const ingredientsList = document.createElement('div');
+    ingredientsList.setAttribute('class', 'recipe-ingredients');
+    recipeIngredientsAndNutrients.appendChild(ingredientsList);
+
+    const recipeIngredientsTitle = document.createElement('h3');
+    recipeIngredientsTitle.setAttribute('class', 'recipe-ingredients-title');
+    recipeIngredientsTitle.textContent = 'Ingredients';
+    ingredientsList.appendChild(recipeIngredientsTitle);
+
+    const breakLine = document.createElement('br');
+    breakLine.setAttribute('class', 'breakLine');
+    ingredientsList.appendChild(breakLine);
+
+    const ingredientsUl = document.createElement('ul')
+    ingredientsUl.setAttribute('class', 'ingredients-ul');
+    for (let i = 0; i < recipe.recipe.ingredientLines.length; i++) {
+        ingredientsUl.innerHTML += `<li>${recipe.recipe.ingredientLines[i]}</li>`;
+    }
+    ingredientsList.appendChild(ingredientsUl);
+
+    const recipeNutrients = document.createElement('div');
+    recipeNutrients.setAttribute('class', 'recipe-nutrients');
+    recipeIngredientsAndNutrients.appendChild(recipeNutrients);
+
+    const nutrientsTitle = document.createElement('h3');
+    nutrientsTitle.setAttribute('class', 'recipe-nutrients-title');
+    nutrientsTitle.textContent = 'Nutrients';
+    recipeNutrients.appendChild(nutrientsTitle);
+
+    const nutrientsTablediv = document.createElement('div');
+    nutrientsTablediv.setAttribute('class', 'recipe-nutrients-table');
+    recipeNutrients.appendChild(nutrientsTablediv);
+
+    const nutrientsTable = document.createElement('table');
+    nutrientsTable.setAttribute('class', 'table-of-nutrients');
+    nutrientsTable.innerHTML = `                        <thead>
                         </thead>
                         <tbody>
                         <tr>
                             <td>Energy</td>
-                            <td>1080</td>
+                            <td>${Math.round(recipe.recipe.totalNutrients.ENERC_KCAL.quantity)}</td>
                             <td>kcal</td>
                         </tr>
                         <tr>
                             <td>Fat</td>
-                            <td>80</td>
+                            <td>${Math.round(recipe.recipe.totalNutrients.FAT.quantity)}</td>
                             <td>g</td>
                         </tr>
                         <tr>
                             <td>Carbs</td>
-                            <td>56</td>
+                            <td>${Math.round(recipe.recipe.totalNutrients.CHOCDF.quantity)}</td>
                             <td>g</td>
                         </tr>
                         <tr>
                             <td>Sugar</td>
-                            <td>20</td>
+                            <td>${Math.round(recipe.recipe.totalNutrients.SUGAR.quantity)}</td>
                             <td>g</td>
                         </tr>
                         <tr>
                             <td>Protein</td>
-                            <td>15</td>
+                            <td>${Math.round(recipe.recipe.totalNutrients.PROCNT.quantity)}</td>
                             <td>g</td>
                         </tr>
                         <tr>
                             <td>Sodium</td>
-                            <td>1900</td>
+                            <td>${Math.round(recipe.recipe.totalNutrients.NA.quantity)}</td>
                             <td>mg</td>
                         </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="recipe-health-labels-div">
-            <h3 class="recipe-health-labels-title">Health labels</h3>
-            <div class="recipe-health-labels">
-                <p>Peanut-Free</p>
-                <p>Kidney-Friendly</p>
-                <p>Egg-Free</p>
-                <p>Peanut-Free</p>
-                <p>Soy-Free</p>
-                <p>Fish Free</p>
-                <p>Shellfish-Free</p>
-                <p>Tree-Nut-Free</p>
-            </div>
-        </div>`
+                        </tbody>`
+    nutrientsTablediv.appendChild(nutrientsTable);
+
+    const healthLabelDivs = document.createElement('div');
+    healthLabelDivs.setAttribute('class', 'recipe-health-labels-div');
+
+    const healthLabelTitle = document.createElement('h3');
+    healthLabelTitle.setAttribute('class', 'recipe-health-labels-title');
+    healthLabelTitle.textContent = 'Health labels'
+    healthLabelDivs.appendChild(healthLabelTitle);
+
+    const healthLabel = document.createElement('div');
+    healthLabel.setAttribute('class', 'recipe-health-labels');
+    for (let i = 0; i < recipe.recipe.healthLabels.length; i++) {
+        healthLabel.innerHTML += `<p>${recipe.recipe.healthLabels[i]}</p>`
+    }
+    healthLabelDivs.appendChild(healthLabel)
+
+    recipeInfo.appendChild(recipeIngredientsAndNutrients);
+    recipeInfo.appendChild(healthLabelDivs);
 
     return recipeInfo;
 }
