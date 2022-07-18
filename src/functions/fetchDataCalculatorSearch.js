@@ -9,8 +9,8 @@ const fetchDataCalculatorSearch = async (product) => {
     //Opslaan van URI en endpoint
     const URI = 'https://api.edamam.com';
     const endpoint = '/api/food-database/v2/parser';
-    const API_ID = '44920bbe';
-    const API_KEY = 'e0b07558906ed952fb1226ace4bc0227'
+    const API_ID = 'ec73a27a';
+    const API_KEY = '270cc5a42e9022d3b8f92f30feed3e6e'
 
     // Try block
 
@@ -21,15 +21,11 @@ const fetchDataCalculatorSearch = async (product) => {
                 type: 'public',
                 app_id: API_ID,
                 app_key: API_KEY,
-                q: product
+                ingr: product
             }
         });
-        // console.log(response.data.hits);
-        createTableCalculatorSearch(response.data.hits);
-        const searchTable = document.getElementById('calorie-calculator-product-table-div');
-        searchTable.replaceChildren();
-
-        searchTable.innerHTML = `<p>${product.recipe.label}</p>`;
+        console.log(response.data.parsed);
+        createTableCalculatorSearch(response.data.parsed);
     } catch (err) {
         console.error(err)
     }

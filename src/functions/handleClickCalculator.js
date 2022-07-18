@@ -9,9 +9,9 @@ const productInput = document.getElementById('search-bar-calculator')
 submitButton.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log(e);
-    const searchTable = document.getElementById('calorie-calculator-product-table-div');
-    searchTable.replaceChildren();
+    // const searchTable = document.getElementById('calorie-calculator-product-table-div');
+    // searchTable.replaceChildren();
 
-    searchTable.innerHTML = `<p>Hallo</p>`;
+    // searchTable.innerHTML = `<p>Hallo</p>`;
     fetchDataCalculatorSearch(productInput.value);
 })
