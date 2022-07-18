@@ -39,16 +39,11 @@
             <table class="calorie-calculator-product-table">
                 <thead>
                 </thead>
-                <tbody>
+                <tbody id="tbody-table">
                 <tr class="row-one-product">
                     <td>Product</td>
                     <td>Quantity</td>
                     <td>Label</td>
-                </tr>
-                <tr>
-                    <td>Mars</td>
-                    <td>60</td>
-                    <td>Gram</td>
                 </tr>
                 </tbody>
             </table>
@@ -56,8 +51,8 @@
         <div class="amount-div-calculator">
             <form id="submit-form-calculator-add">
                 <label for="amount-calculator">Amount
-                    <input class="amount-input-calculator" type="number"
-                           min="1" id="amount-calculator" name="amount-of-product"/>
+                    <input class="amount-input-calculator" type="text"
+                           minlength="1" id="amount-calculator" name="amount-of-product"/>
                 </label>
                 <label for="add-button-calculator">Serving(s)
                     <button id="add-button-calculator" type="submit">

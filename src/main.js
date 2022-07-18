@@ -18,3 +18,5 @@ import createRecipePage from "./functions/createRecipePage";
 import './functions/handleClickCalculator';
 import fetchDataCalculatorSearch from "./functions/fetchDataCalculatorSearch";
 import createTableCalculatorSearch from "./functions/createTableCalculatorSearch";
+
+// Calculator tabel Calculator page

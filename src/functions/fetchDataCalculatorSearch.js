@@ -22,6 +22,7 @@ const fetchDataCalculatorSearch = async (product) => {
                 app_id: API_ID,
                 app_key: API_KEY,
                 ingr: product
+                // upc: product ? product : null
             }
         });
         console.log(response.data.parsed);
