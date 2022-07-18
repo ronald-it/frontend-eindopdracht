@@ -698,6 +698,14 @@ h2, h3, h4, h5, h6, body {
     align-items: center;
 }
 
+#submit-form-calculator-search {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .search-bar-div-calculator input, button {
     padding: 10px;
     border-radius: 5px;
@@ -766,6 +774,14 @@ h2, h3, h4, h5, h6, body {
 .amount-div-calculator {
     border: 3px solid red;
     margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#submit-form-calculator-add {
+    border: 3px solid red;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

@@ -26,6 +26,10 @@ const fetchDataCalculatorSearch = async (product) => {
         });
         // console.log(response.data.hits);
         createTableCalculatorSearch(response.data.hits);
+        const searchTable = document.getElementById('calorie-calculator-product-table-div');
+        searchTable.replaceChildren();
+
+        searchTable.innerHTML = `<p>${product.recipe.label}</p>`;
     } catch (err) {
         console.error(err)
     }

@@ -24,14 +24,16 @@
     <div class="inner-container-main-calculator">
         <h2 class="calorie-calculator-title">Calorie Calculator</h2>
         <div class="search-bar-div-calculator">
-            <label for="search-bar-calculator">
-                <input class="search-bar-input-calculator" type="text" placeholder="Barcode / product"
-                       minlength="1" id="search-bar-calculator" name="barcode-or-product"/>
-            </label>
-            <button id="magnifying-glass-calculator" type="button">
-                <img class="search-icon-calculator" src="assets/icons/search.png" alt="search icon">
-            </button>
-            <button id="search-button-calculator" type="submit">Search 🡢</button>
+            <form id="submit-form-calculator-search">
+                <label for="search-bar-calculator">
+                    <input class="search-bar-input-calculator" type="text" placeholder="Barcode / product"
+                           minlength="1" id="search-bar-calculator" name="barcode-or-product"/>
+                </label>
+                <button id="magnifying-glass-calculator" type="button">
+                    <img class="search-icon-calculator" src="assets/icons/search.png" alt="search icon">
+                </button>
+                <button id="search-button-calculator" type="submit">Search 🡢</button>
+            </form>
         </div>
         <div class="calorie-calculator-product-table-div">
             <table class="calorie-calculator-product-table">
@@ -52,15 +54,17 @@
             </table>
         </div>
         <div class="amount-div-calculator">
-            <label for="amount-calculator">Amount
-                <input class="amount-input-calculator" type="number"
-                       min="1" id="amount-calculator" name="amount-of-product"/>
-            </label>
-            <label for="add-button-calculator">Serving(s)
-            <button id="add-button-calculator" type="submit">
-                + Add
-            </button>
-            </label>
+            <form id="submit-form-calculator-add">
+                <label for="amount-calculator">Amount
+                    <input class="amount-input-calculator" type="number"
+                           min="1" id="amount-calculator" name="amount-of-product"/>
+                </label>
+                <label for="add-button-calculator">Serving(s)
+                    <button id="add-button-calculator" type="submit">
+                        + Add
+                    </button>
+                </label>
+            </form>
         </div>
         <div class="calorie-calculator-calculation-table-div">
             <table class="calorie-calculator-calculation-table">
