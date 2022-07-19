@@ -832,10 +832,6 @@ h2, h3, h4, h5, h6, body {
     font-weight: bold;
 }
 
-.row-three-calculation td {
-    padding-bottom: 10px;
-}
-
 .total-row td {
     padding-top: 10px;
     border-top: 1px solid black;
