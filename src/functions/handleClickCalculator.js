@@ -1,12 +1,12 @@
 import fetchDataCalculatorSearch from "./fetchDataCalculatorSearch";
 import fetchDataCalculatorAdd from "./fetchDataCalculatorAdd";
+import fetchDataCalculatorCalories from "./fetchDataCalculatorCalories";
 
 // Elementen voor de search button event listener
 
 const submitButton = document.getElementById('submit-form-calculator-search')
 const productInput = document.getElementById('search-bar-calculator')
 const productArray = [];
-export let calories = 0;
 
 // Submit event voor handleClickCalculator
 
@@ -31,16 +31,29 @@ addButton.addEventListener("submit", (e) => {
     const tbody = document.getElementById('tbody-add-table');
     tbody.replaceChildren();
 
-    const rowOneCalculaion = document.createElement('tr');
-    rowOneCalculaion.setAttribute('class', 'row-one-calculation');
-    rowOneCalculaion.innerHTML = `                                                <td>Product</td>
+    const rowOneCalculation = document.createElement('tr');
+    rowOneCalculation.setAttribute('class', 'row-one-calculation');
+    rowOneCalculation.innerHTML = `                                                <td>Product</td>
                     <td>Calories</td>
                     <td>Fat</td>
                     <td>Carbs</td>`
-    tbody.appendChild(rowOneCalculaion);
+    tbody.appendChild(rowOneCalculation);
 
     for (let i = 0; i < productArray.length; i++) {
         fetchDataCalculatorAdd(productArray[i]);
     }
 
+    let calories = 0;
+
+    for (let i = 0; i < productArray.length; i++) {
+        calories += fetchDataCalculatorCalories(productArray[i]);
+    }
+
+    const totalRow = document.createElement('tr');
+    totalRow.setAttribute('class', 'total-row');
+    totalRow.innerHTML = `                                                        <td>Product</td>
+                    <td>${calories}</td>
+                    <td>Fat</td>
+                    <td>Carbs</td>`
+    tbody.appendChild(totalRow);
 })
