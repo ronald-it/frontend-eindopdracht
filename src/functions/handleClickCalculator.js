@@ -5,6 +5,7 @@ import fetchDataCalculatorCalories from "./fetchDataCalculatorCalories";
 const submitButton = document.getElementById('submit-form-calculator-search')
 const productInput = document.getElementById('search-bar-calculator')
 let productArray = [];
+export let totalCalories = 0;
 // Submit event voor handleClickCalculator
 
 submitButton.addEventListener("submit", (e) => {
@@ -34,7 +35,9 @@ addButton.addEventListener("submit", (e) => {
         fetchDataCalculatorAdd(productArray[i]);
     }
 
-    productArray = [];
+    for (let i = 0; i < productArray.length; i++) {
+        fetchDataCalculatorCalories(productArray[i], tbody);
+    }
 
-    fetchDataCalculatorCalories(productArray[1], tbody);
+    productArray = [];
 })
