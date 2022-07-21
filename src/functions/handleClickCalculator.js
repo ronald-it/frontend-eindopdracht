@@ -32,6 +32,8 @@ addButton.addEventListener("submit", (e) => {
 
     console.log(e.target.value)
 
+    let arrayOfProductData;
+
     const tbody = document.getElementById('tbody-add-table');
 
     for (let i = 0; i < productArray.length; i++) {
@@ -39,8 +41,12 @@ addButton.addEventListener("submit", (e) => {
     }
 
     for (let i = 0; i < productArray.length; i++) {
-        fetchDataCalculatorCalories(productArray[i], tbody);
+        arrayOfProductData = fetchDataCalculatorCalories(productArray[i], tbody);
     }
+
+    console.log(arrayOfProductData);
+
+
 
     productArray = [];
 })
