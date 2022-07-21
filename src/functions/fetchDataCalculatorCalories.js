@@ -57,19 +57,7 @@ const fetchDataCalculatorCalories = async (product, parentElement) => {
         console.log(createTableCalculatorFat(response.data.parsed));
         console.log(createTableCalculatorCarbs(response.data.parsed));
 
-
-        // const totalRow = document.createElement('tr');
-        // totalRow.setAttribute('class', 'total-row');
-        //
-        // totalRow.innerHTML = `
-        //             <td>Total</td>
-        //             <td>${totalCalories} kcal</td>
-        //             <td>${totalFat} g</td>
-        //             <td>${totalCarbs} g</td>`
-        //
-        // parentElement.appendChild(totalRow);
-
-        return [totalCalories, totalFat, totalCarbs];
+        return await [totalCalories, totalFat, totalCarbs];
 
     } catch (err) {
         console.error(err)

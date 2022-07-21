@@ -3,6 +3,7 @@
 import fetchDataCalculatorSearch from "./fetchDataCalculatorSearch";
 import fetchDataCalculatorAdd from "./fetchDataCalculatorAdd";
 import fetchDataCalculatorCalories from "./fetchDataCalculatorCalories";
+import createTotalRowCalculatorPage from "./createTotalRowCalculatorPage";
 
 // Elementen voor de search button event listener
 
@@ -23,10 +24,14 @@ submitButton.addEventListener("submit", (e) => {
 // Elementen voor de add button event listener
 
 const addButton = document.getElementById('submit-form-calculator-add');
+const totalRow = document.createElement('tr');
+totalRow.setAttribute('class', 'total-row');
 
 // Add event voor handleClickCalculator
 
-addButton.addEventListener("submit", (e) => {
+addButton.addEventListener("submit", async (e) => {
+
+    totalRow.replaceChildren()
 
     e.preventDefault();
 
@@ -41,12 +46,12 @@ addButton.addEventListener("submit", (e) => {
     }
 
     for (let i = 0; i < productArray.length; i++) {
-        arrayOfProductData = fetchDataCalculatorCalories(productArray[i], tbody);
+        arrayOfProductData = await fetchDataCalculatorCalories(productArray[i], tbody);
     }
 
+    createTotalRowCalculatorPage(arrayOfProductData, tbody);
+
     console.log(arrayOfProductData);
-
-
 
     productArray = [];
 })
