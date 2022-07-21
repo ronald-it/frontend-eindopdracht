@@ -1,5 +1,5 @@
 import axios from "axios";
-import {totalCalories} from "./handleClickCalculator";
+import {totalCalories, totalCarbs, totalFat} from "./handleClickCalculator";
 // Fetch data functie
 const fetchDataCalculatorCalories = async (product, parentElement) => {
     console.log('fetch data script is running');
@@ -28,17 +28,37 @@ const fetchDataCalculatorCalories = async (product, parentElement) => {
             return product[0].food.nutrients.ENERC_KCAL * servingInput;
         }
 
-        totalCalories += createTableCalculatorCalories(product);
+        const createTableCalculatorFat = (product) => {
+
+            const servingInput = document.getElementById('amount-calculator').value;
+
+            return product[0].food.nutrients.FAT * servingInput;
+        }
+
+        const createTableCalculatorCarbs = (product) => {
+
+            const servingInput = document.getElementById('amount-calculator').value;
+
+            return product[0].food.nutrients.CHOCDF * servingInput;
+        }
+
+        totalCalories += createTableCalculatorCalories(response.data.parsed);
+        totalFat += createTableCalculatorFat(response.data.parsed);
+        totalCarbs += createTableCalculatorCarbs(response.data.parsed);
+
+        console.log(totalCalories);
+        console.log(totalFat);
+        console.log(totalCarbs);
 
         const totalRow = document.createElement('tr');
         totalRow.setAttribute('class', 'total-row');
         totalRow.replaceChildren();
 
         totalRow.innerHTML = `
-                    <td>Product</td>
-                    <td>${totalCalories}</td>
-                    <td>Fat</td>
-                    <td>Carbs</td>`
+                    <td>Total</td>
+                    <td>${totalCalories} kcal</td>
+                    <td>${totalFat} g</td>
+                    <td>${totalCarbs} g</td>`
 
         parentElement.appendChild(totalRow);
 
