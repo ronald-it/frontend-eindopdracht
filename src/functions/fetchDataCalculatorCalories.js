@@ -1,5 +1,9 @@
 import axios from "axios";
-import {totalCalories, totalCarbs, totalFat} from "./handleClickCalculator";
+
+let totalCalories = 0;
+let totalFat = 0;
+let totalCarbs = 0;
+
 // Fetch data functie
 const fetchDataCalculatorCalories = async (product, parentElement) => {
     console.log('fetch data script is running');
@@ -49,6 +53,9 @@ const fetchDataCalculatorCalories = async (product, parentElement) => {
         console.log(totalCalories);
         console.log(totalFat);
         console.log(totalCarbs);
+        console.log(createTableCalculatorCalories(response.data.parsed));
+        console.log(createTableCalculatorFat(response.data.parsed));
+        console.log(createTableCalculatorCarbs(response.data.parsed));
 
         const totalRow = document.createElement('tr');
         totalRow.setAttribute('class', 'total-row');

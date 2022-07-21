@@ -5,7 +5,7 @@ const createTableCalculatorAdd = (product) => {
     const carbsPerServing = product[0].food.nutrients.CHOCDF * servingInput;
     const tbody = document.getElementById('tbody-add-table');
     const trTwo = document.createElement('tr');
-    trTwo.setAttribute('class', 'row-three-calculation');
+    trTwo.setAttribute('class', 'row-two-calculation');
     trTwo.innerHTML = `<td>${product[0].food.label}</td>
                     <td>${Math.round(caloriesPerServing)} kcal</td>
                     <td>${Math.round(fatsPerServing)} g</td>
