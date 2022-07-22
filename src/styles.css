@@ -818,25 +818,27 @@ h2, h3, h4, h5, h6, body {
     color: #283E53;
 }
 
-.calorie-calculator-calculation-table-div {
-    border: 3px solid blue;
-    margin-bottom: 3em;
-}
-
 .calorie-calculator-calculation-table {
     border-collapse: collapse;
-    width: 400px;
+    width: 500px;
 }
 
 .row-one-calculation td {
     font-weight: bold;
+    width: 125px;
 }
 
 .row-two-calculation td {
     padding-bottom: 5px;
 }
 
-.total-row td {
+#total-row td {
     padding-top: 10px;
     border-top: 1px solid black;
+    width: 125px;
+}
+
+.calorie-calculator-calculation-table-total {
+    border-collapse: collapse;
+    width: 500px;
 }

@@ -49,7 +49,7 @@ addButton.addEventListener("submit", async (e) => {
         arrayOfProductData = await fetchDataCalculatorCalories(productArray[i], tbody);
     }
 
-    createTotalRowCalculatorPage(arrayOfProductData, tbody);
+    createTotalRowCalculatorPage(arrayOfProductData);
 
     console.log(arrayOfProductData);
 

@@ -1,7 +1,6 @@
-const createTotalRowCalculatorPage = (array, parentElement) => {
+const createTotalRowCalculatorPage = (array) => {
 
-const totalRow = document.createElement('tr');
-totalRow.setAttribute('class', 'total-row');
+const totalRow = document.getElementById('total-row');
 
 totalRow.innerHTML = `
                     <td>Total</td>
@@ -9,9 +8,7 @@ totalRow.innerHTML = `
                     <td>${Math.round(array[1])} g</td>
                     <td>${Math.round(array[2])} g</td>`
 
-parentElement.appendChild(totalRow);
-
-return parentElement;
+return totalRow;
 
 }
 
