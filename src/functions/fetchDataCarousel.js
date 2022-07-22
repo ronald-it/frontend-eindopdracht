@@ -1,7 +1,7 @@
 import axios from "axios";
 import createCarouselHome from "./createCarouselHome";
 
-// Fetch data functie
+// Fetch data functie om gegevens op te halen om de carousel kaartjes op homepage te kunnen maken
 
 const fetchDataCarousel = async () => {
     // console.log('fetch data script is running');
@@ -21,11 +21,11 @@ const fetchDataCarousel = async () => {
                 type: 'public',
                 app_id: API_ID,
                 app_key: API_KEY,
-                q: "chicken"
+                q: "teriyaki"
             }
 
         });
-        console.log(response.data.hits);
+        // console.log(response.data.hits);
         // Create Elements functie aanroepen en parameters toevoegen
         createCarouselHome(response.data.hits);
 

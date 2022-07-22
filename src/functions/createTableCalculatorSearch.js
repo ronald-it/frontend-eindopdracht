@@ -1,3 +1,5 @@
+// Aanmaken van rows per input (bovenste tabel calculator page)
+
 const createTableCalculatorSearch = (product) => {
 
     const tbody = document.getElementById('tbody-table');

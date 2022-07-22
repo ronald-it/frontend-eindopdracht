@@ -17,7 +17,7 @@ const fetchDataRecipePage = async (id) => {
         });
 
         createRecipePage(response.data);
-        console.log(response.data);
+        // console.log(response.data);
 
     } catch (err) {
         console.error(err);

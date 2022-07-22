@@ -1,10 +1,10 @@
 import axios from "axios";
 import createTableCalculatorSearch from "./createTableCalculatorSearch";
 
-// Fetch data functie
+// Fetch data functie om de gegeven op te halen voor de eerste tabel op calculator page
 const fetchDataCalculatorSearch = async (product) => {
 
-    console.log('fetch data script is running');
+    // console.log('fetch data script is running');
 
     //Opslaan van URI en endpoint
     const URI = 'https://api.edamam.com';
@@ -25,12 +25,14 @@ const fetchDataCalculatorSearch = async (product) => {
                 // upc: product ? product : null
             }
         });
-        console.log(response.data.parsed);
+        // console.log(response.data.parsed);
+        // Create Elements functie aanroepen en parameters toevoegen
         createTableCalculatorSearch(response.data.parsed);
+
+        // Catch block
     } catch (err) {
         console.error(err)
     }
 }
-// Create Elements functie aanroepen en parameters toevoegen
-// Catch block
+
 export default fetchDataCalculatorSearch;

@@ -18,27 +18,27 @@ h2, h3, h4, h5, h6, body {
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 .outer-container-header {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     display: flex;
     flex-direction: column;
 }
 
 .inner-container-header {
-    border: 3px solid yellow;
+    /*border: 3px solid yellow;*/
 }
 
 .outer-container-main {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     flex-direction: column;
 }
 
 .inner-container-main {
-    border: 3px solid green;
+    /*border: 3px solid green;*/
 }
 
 .outer-container-footer {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -46,7 +46,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .inner-container-footer {
-    border: 3px solid yellow;
+    /*border: 3px solid yellow;*/
     display: flex;
     flex-direction: row;
     align-content: space-between;
@@ -59,7 +59,7 @@ h2, h3, h4, h5, h6, body {
 /* --------------- 4.1 Header ------------------- */
 .title-and-navbar {
     padding: 25px;
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -68,7 +68,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .ul-header {
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -76,7 +76,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .page-title {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     color: #283E53;
     font-weight: lighter;
 }
@@ -95,7 +95,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .hero-image-outer-container {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     background-image: url("assets/images/hero-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -108,7 +108,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .hero-image-inner-container {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -143,7 +143,7 @@ h2, h3, h4, h5, h6, body {
 
 /* --------------- 4.2 Carousel ------------- */
 .outer-container-carousel {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -151,7 +151,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .inner-container-carousel {
-    border: 3px solid yellow;
+    /*border: 3px solid yellow;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -167,6 +167,9 @@ h2, h3, h4, h5, h6, body {
     margin-top: -40px;
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(244, 244, 244, 1) 70%, rgba(230, 230, 230, 1) 95%);
+    height: 330px;
+    width: 400px;
+    padding-right: 10px;
 }
 
 .carousel-card-image-one {
@@ -180,6 +183,7 @@ h2, h3, h4, h5, h6, body {
     flex-direction: row;
     justify-content: flex-start;
     margin-left: 1em;
+    margin-bottom: -25px;
     font-weight: bold;
     color: #4E4E4E;
 }
@@ -201,6 +205,9 @@ h2, h3, h4, h5, h6, body {
     margin-top: -60px;
     margin-bottom: -20px;
     background-color: #F7F7F7;
+    height: 380px;
+    width: 475px;
+    padding-right: 10px;
 }
 
 .carousel-card-image-two {
@@ -214,6 +221,7 @@ h2, h3, h4, h5, h6, body {
     flex-direction: row;
     justify-content: flex-start;
     margin-left: 1em;
+    margin-bottom: -25px;
     font-weight: bold;
     color: #4E4E4E;
 }
@@ -235,6 +243,8 @@ h2, h3, h4, h5, h6, body {
     margin-top: -40px;
     background: rgb(255, 255, 255);
     background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(244, 244, 244, 1) 70%, rgba(230, 230, 230, 1) 95%);
+    height: 330px;
+    width: 400px;
 }
 
 .carousel-card-image-three {
@@ -248,6 +258,7 @@ h2, h3, h4, h5, h6, body {
     flex-direction: row;
     justify-content: flex-start;
     margin-left: 1em;
+    margin-bottom: -25px;
     font-weight: bold;
     color: #4E4E4E;
 }
@@ -286,13 +297,13 @@ h2, h3, h4, h5, h6, body {
 
 /* --------------- 4.3 Search bar ------------- */
 .outer-container-searchbar {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     background-color: #283E53;
     padding: 50px;
 }
 
 .inner-container-searchbar {
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -300,7 +311,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 #submit-form {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -369,7 +380,7 @@ h2, h3, h4, h5, h6, body {
 
 /* --------------- 4.4 Search results ------------- */
 .outer-container-search-results {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -378,7 +389,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .inner-container-search-results {
-    border: 3px solid yellow;
+    /*border: 3px solid yellow;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -460,7 +471,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .column-footer {
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -509,14 +520,14 @@ h2, h3, h4, h5, h6, body {
 /* --------------- 5.1 Main ------------------- */
 
 .outer-container-main-recipe {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .inner-container-main-recipe {
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -528,7 +539,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .title-and-time-image {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     display: flex;
     flex-direction: row;
     gap: 2em;
@@ -536,7 +547,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .time-image-div-recipe {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -556,12 +567,12 @@ h2, h3, h4, h5, h6, body {
 }
 
 .recipe-name {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     color: #283E55;
 }
 
 .recipe-text-and-image {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -569,19 +580,19 @@ h2, h3, h4, h5, h6, body {
 }
 
 .recipe-instructions {
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     flex-basis: 500px;
     color: #283E55;
 }
 
 .recipe-picture {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     height: 400px;
     width: 400px;
 }
 
 .recipe-image {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     height: 100%;
     width: 100%;
     border-radius: 3px;
@@ -589,7 +600,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .recipe-ingredients-and-nutrients {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -598,7 +609,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .recipe-ingredients {
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     flex-basis: 400px;
     color: #283E55;
 }
@@ -611,16 +622,12 @@ h2, h3, h4, h5, h6, body {
     margin-left: 2em;
 }
 
-.pietje-puk {
-    color: red;
-}
-
 .ingredients-ul li {
     color: #283E55;
 }
 
 .recipe-nutrients {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     flex-basis: 400px;
 }
 
@@ -631,12 +638,12 @@ h2, h3, h4, h5, h6, body {
 }
 
 .recipe-nutrients table {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     width: 400px;
 }
 
 .recipe-health-labels-div {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     color: #283E55;
     width: 500px;
 }
@@ -668,7 +675,7 @@ h2, h3, h4, h5, h6, body {
 /* --------------- 6.1 Main ------------------- */
 
 .outer-container-main-calculator {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -677,20 +684,20 @@ h2, h3, h4, h5, h6, body {
 .inner-container-main-calculator {
     margin-top: 100px;
     margin-bottom: 50px;
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     display: flex;
     flex-direction: column;
     flex-basis: 1050px;
 }
 
 .calorie-calculator-title {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     color: #283E53;
     margin-bottom: 2em;
 }
 
 .search-bar-div-calculator {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     margin-bottom: 2em;
     display: flex;
     flex-direction: row;
@@ -699,7 +706,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 #submit-form-calculator-search {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -742,6 +749,7 @@ h2, h3, h4, h5, h6, body {
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -758,12 +766,12 @@ h2, h3, h4, h5, h6, body {
 }
 
 .calorie-calculator-product-table-div {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     margin-bottom: 3em;
 }
 
 .calorie-calculator-product-table {
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     width: 400px;
 }
 
@@ -772,7 +780,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .amount-div-calculator {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     margin-bottom: 3em;
     display: flex;
     flex-direction: row;
@@ -781,7 +789,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 #submit-form-calculator-add {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -821,6 +829,7 @@ h2, h3, h4, h5, h6, body {
 .calorie-calculator-calculation-table {
     border-collapse: collapse;
     width: 500px;
+    /*border: 1px solid blue;*/
 }
 
 .row-one-calculation td {
@@ -839,6 +848,7 @@ h2, h3, h4, h5, h6, body {
 }
 
 .calorie-calculator-calculation-table-total {
+    /*border: 1px solid red;*/
     border-collapse: collapse;
     width: 500px;
 }

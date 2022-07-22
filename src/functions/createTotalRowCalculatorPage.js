@@ -1,3 +1,5 @@
+// Aanmaken van de 'total row' voor de onderste tabel van calculator page
+
 const createTotalRowCalculatorPage = (array) => {
 
 const totalRow = document.getElementById('total-row');

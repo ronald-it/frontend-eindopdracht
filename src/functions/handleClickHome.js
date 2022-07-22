@@ -1,5 +1,7 @@
 import fetchDataHome from "./fetchDataHome";
 
+// input elementen voor de event listener
+
 const ingredientInput = document.getElementById('search-bar')
 const mealTypeInput = document.getElementById('meals')
 const cuisineInput = document.getElementById('cuisine')

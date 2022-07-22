@@ -1,3 +1,5 @@
+// Aanmaken van rows per input (onderste tabel op calculator page)
+
 const createTableCalculatorAdd = (product) => {
     const servingInput = document.getElementById('amount-calculator').value;
     const caloriesPerServing = product[0].food.nutrients.ENERC_KCAL * servingInput;

@@ -1,7 +1,7 @@
 import axios from "axios";
 import createRecipeCardHome from "./createRecipeCardHome";
 
-// Fetch data functie
+// Fetch data functie om de recipe cards te maken voor de input van de zoekbalk
 
 const fetchDataHome = async (ingredient, mealType, cuisineType, diet, time) => {
     console.log('fetch data script is running');
@@ -27,11 +27,13 @@ const fetchDataHome = async (ingredient, mealType, cuisineType, diet, time) => {
             }
         });
         // console.log(response.data.hits);
+        // Create Elements functie aanroepen en parameters toevoegen
         createRecipeCardHome(response.data.hits);
+
+        // Catch block
     } catch (err) {
         console.error(err)
     }
 }
-// Create Elements functie aanroepen en parameters toevoegen
-// Catch block
+
 export default fetchDataHome;

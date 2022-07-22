@@ -8,8 +8,8 @@ const carouselCreator = (potatoArray) => {
 
     const randomizer = (Math.random() * 19)
     const rounder = Math.round(randomizer);
-    console.log(randomizer);
-    console.log(rounder);
+    // console.log(randomizer);
+    // console.log(rounder);
 
     for (let i = 0; i < 3; i++) {
         if (i === 0) {
@@ -199,9 +199,9 @@ const carouselCreator = (potatoArray) => {
                     </div>
                     </a>`}
         }
-        console.log(i);
+        // console.log(i);
     }
-    console.log(recipeCardCarousel);
+    // console.log(recipeCardCarousel);
     return recipeCardCarousel;
 }
 

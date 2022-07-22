@@ -15,43 +15,37 @@ let productArray = [];
 
 submitButton.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(e.target.value);
+    // console.log(e.target.value);
     fetchDataCalculatorSearch(productInput.value);
     productArray.push(productInput.value);
-    console.log(productArray);
+    // console.log(productArray);
 })
 
 // Elementen voor de add button event listener
 
 const addButton = document.getElementById('submit-form-calculator-add');
-const totalRow = document.createElement('tr');
-totalRow.setAttribute('class', 'total-row');
 
 // Add event voor handleClickCalculator
 
 addButton.addEventListener("submit", async (e) => {
 
-    totalRow.replaceChildren()
-
     e.preventDefault();
 
-    console.log(e.target.value)
+    // console.log(e.target.value)
 
     let arrayOfProductData;
-
-    const tbody = document.getElementById('tbody-add-table');
 
     for (let i = 0; i < productArray.length; i++) {
         fetchDataCalculatorAdd(productArray[i]);
     }
 
     for (let i = 0; i < productArray.length; i++) {
-        arrayOfProductData = await fetchDataCalculatorCalories(productArray[i], tbody);
+        arrayOfProductData = await fetchDataCalculatorCalories(productArray[i]);
     }
 
     createTotalRowCalculatorPage(arrayOfProductData);
 
-    console.log(arrayOfProductData);
+    // console.log(arrayOfProductData);
 
     productArray = [];
 })

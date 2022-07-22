@@ -1,5 +1,7 @@
 import klokje  from "../assets/icons/time.png"
 
+// De resultaten voor de input van de searchbar op de homepage visualiseren
+
 const createRecipeCardHome = (recipesArray) => {
     const recipeList = document.getElementById('inner-container-search-results');
     recipeList.replaceChildren();

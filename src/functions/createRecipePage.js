@@ -1,5 +1,7 @@
 import klokje from "../assets/icons/time.png"
 
+// Aanmaken van de recipe page
+
 const createRecipePage = (recipe) => {
     const recipeInfo = document.getElementById('inner-container-main-recipe')
     recipeInfo.replaceChildren();
