@@ -1,6 +1,16 @@
+Inhoudsopgave:
+
+1 Inleiding
+
+2 Installatie
+
+Inleiding
+
 Dit is de installatiehandleiding voor de applicatie. De applicatie heeft drie verschillende pagina´s, een homepage, een recipepage en een calculator page. Op de homepage kan men een recept of ingrediënt invullen in de zoekbalk en/of op basis van gerechtstype, keuken, dieet en/of bereidingstijd een zoekactie maken. Hierbij verschijnen bij geldige input 20 receptenkaarten waarop men kan klikken om op unieke recipepages te komen. Ook kan men klikken op een van de drie receptenkaarten in de carousel boven de zoekbalk. Op de recipepages staan de unieke gegevens van de desbetreffende recepten. Als laatst kan men op de calculator page een of meer producten invullen, op zoeken (search) klikken en vervolgens de product(en) toevoegen aan de calculator tabel door een portiegrootte in te vullen en op toevoegen (add) te klikken. Hieronder is een screenshot van de belangrijkste pagina, de homepage.
 
 ![Screenshot belangrijkste pagina](/designs/homepage.jpg "Screenshot belangrijkste pagina")
+
+Installatie
 
 Om deze applicatie te kunnen gebruiken, zullen er eerst wat stappen genomen moeten worden om de installatie te voltooien.
 In ieder geval moet de gebruiker van deze applicatie het programma Webstorm installeren en verder is ook node.js nodig.
